@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav>
+            Venda Medicamentos Controlados
+        </nav>
+    </header>
+     <br>
+    <div id="corpo">
+        <!-- Formulário -->
+        <div id="formulario">
+           <form action="insere" method="post">
+
+            <div class="crm direita" id="">
+                <label for="crm">CRM:</label><br>
+                <input type="text" size="25" placeholder="...">
+            </div>               
+            
+       
+            <div class="esquerda" id="">
+                 <label for="nome">Nome do Médico</label><br>
+                 <input type="text" size="35" placeholder="digite seu nome">
+            </div>
+              
+            <div class="data direita" id="">
+                <label for="data da Receita">Data da Receita:</label><br>
+                <input type="text" size="25" placeholder="__/__/____">
+             </div>
+
+             <div class="quant caixas" id="">
+                <label for="caixas">Quantidade de Caixas:</label><br>
+                <input type="text" placeholder="...">
+             </div>
+
+             <div class="esquerda" id="">
+                <label for="nome">Nome do Paciente:</label><br>
+                <input type="text" size="35" placeholder="Nome Paciente">
+             </div>
+
+             <div class="cpf direita" id="">
+                <label for="cpf">CPF do Paciente:</label><br>
+                <input type="text" size="25" placeholder="000.000.000-0">
+             </div>
+
+             <div class="data direita" id="">
+                <label for="data_de_nascimento">Data de Nascimento:</label><br>
+                <input type="text" size="25" placeholder="__/__/____">
+             </div>
+             
+             <div>
+                <label for="sexo">Sexo</label><br />
+                <input checked="checked" type="radio" id="sexo" name="sexo" value="m" /> Masculino
+                <input type="radio" name="sexo" value="f" /> Feminino
+             </div>
+             <br>
+             <div>
+                <label>
+                    <span>Anexar arquivo</span>
+                    <input type="file" name="arquivo" size="16" />
+                    </label>
+                    
+                    <input type="hidden" name="enviar" value="send" />
+               <input type="submit" name="Enviar" />
+             </div>
+
+
+           </form>
+        </div>
+        <!-- /Formulário -->
+     </div>
+</body>
+</html>
